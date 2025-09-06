@@ -8,24 +8,24 @@ const QUESTIONS = [
     answer: 3
   },
   {
-    question: "What does CSS stand for?",
-    choices: ["Central Style Sheets", "Cascading Style Sheets", "Cascading Simple Sheets", "Cars SUVs Sailboats"],
+    question: "Who was the first person to climb Mount Everest?"",
+    choices: ["Tenzing Norgay & Edmund Hillary", "Reinhold Messner", "George Mallory", "Anatoli Boukreev"],
     answer: 1
   },
   {
-    question: "What does HTML stand for?",
-    choices: ["Hypertext Markup Language", "Hypertext Markdown Language", "Hyperloop Machine Language", "Helicopters Terminals Motorboats Lamborghinis"],
-    answer: 0
-  },
-  {
-    question: "What year was JavaScript created?",
-    choices: ["1995", "1994", "2000", "2005"],
-    answer: 0
-  },
-  {
-    question: "Which tag is used to link a JavaScript file?",
-    choices: ["<link>", "<script>", "<js>", "<code>"],
+    question: "Which is the largest desert in the world?",
+    choices: ["Sahara", "Gobi", "Antarctic Desert", "Kalahari"],
     answer: 1
+  },
+  {
+    question: "Which country invented paper?",
+    choices:["India", "China", "Egypt", "Greece"],
+    answer: 2
+  },
+  {
+    question: "If 3x + 5 = 20, what is the value of x?",
+    choices: ["3", "4", "5", "6"],
+    answer: 3
   }
 ];
 
