@@ -4,9 +4,9 @@
 // You can edit this array to make your own quiz!
 const QUESTIONS = [
   {
-    question: "Which language runs in a web browser?",
-    choices: ["Java", "C++", "Python", "JavaScript"],
-    answer: 3
+    question:  "What is the chemical symbol for gold?",
+    choices:["Ag", "Au", "Gd", "Go"],
+    answer: 1
   },
   {
     question: "What does CSS stand for?",
@@ -16,17 +16,17 @@ const QUESTIONS = [
   {
     question: "What does HTML stand for?",
     choices: ["Hypertext Markup Language", "Hypertext Markdown Language", "Hyperloop Machine Language", "Helicopters Terminals Motorboats Lamborghinis"],
-    answer: 0
-  },
-  {
-    question: "What year was JavaScript created?",
-    choices: ["1995", "1994", "2000", "2005"],
-    answer: 0
-  },
-  {
-    question: "Which tag is used to link a JavaScript file?",
-    choices: ["<link>", "<script>", "<js>", "<code>"],
     answer: 1
+  },
+  {
+    question: "Which organ in the human body is primarily responsible for detoxification?",
+    choices: ["Lungs", "Liver", "Kidneys", "Stomach"],
+    answer: 1
+  },
+  {
+    question:  "What is the speed of light in vacuum?",
+    choices:["3 × 10^6 m/s", "3 × 10^7 m/s", "3 × 10^8 m/s", "3 × 10^9 m/s"],
+    answer: 2
   }
 ];
 
