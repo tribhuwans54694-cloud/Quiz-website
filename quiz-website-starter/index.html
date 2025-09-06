@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quick Quiz</title>
+  <meta name="description" content="A simple multiple-choice quiz built with HTML, CSS, and JavaScript." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Quick Quiz</h1>
+    <nav aria-label="Site">
+      <a href="#start-screen">Home</a>
+      <a href="#quiz-screen" id="skip-to-quiz" class="visually-hidden">Skip to quiz</a>
+    </nav>
+  </header>
+
+  <main id="app" class="container" tabindex="-1">
+    <!-- Start Screen -->
+    <section id="start-screen" class="card" aria-labelledby="start-title">
+      <h2 id="start-title">Ready to test your knowledge?</h2>
+      <p>Press start to begin a short multiple‑choice quiz. You’ll see your score at the end.</p>
+      <button id="start-btn" class="btn primary">Start Quiz</button>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="quiz-screen" class="card hidden" aria-labelledby="quiz-title" aria-live="polite">
+      <div class="quiz-header">
+        <h2 id="quiz-title">Question <span id="question-number">1</span>/<span id="question-total">5</span></h2>
+        <div class="status">
+          <span id="score-pill" class="pill" aria-live="polite" aria-atomic="true">Score: 0</span>
+        </div>
+      </div>
+
+      <div id="question-text" class="question" role="heading" aria-level="3"></div>
+
+      <ul id="choices" class="choices" role="list"></ul>
+
+      <div class="controls">
+        <button id="next-btn" class="btn" disabled>Next</button>
+        <button id="restart-btn" class="btn ghost">Restart</button>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar" style="width: 0%;" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="result-screen" class="card hidden" aria-labelledby="result-title">
+      <h2 id="result-title">Your Results</h2>
+      <p id="result-summary"></p>
+      <div class="controls">
+        <button id="play-again-btn" class="btn primary">Play Again</button>
+        <a id="share-link" class="btn ghost" href="#" target="_blank" rel="noopener">Share</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Built with ❤ using GitHub Pages</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
